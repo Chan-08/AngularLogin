@@ -1,0 +1,9 @@
+<nav class="navbar">
+    <h2>{{ pageTitle }}</h2>
+  
+    <div class="nav-buttons">
+      <button *ngIf="pageTitle === 'Home'" (click)="navigateToDashboard()">Go to Dashboard</button>
+      <button *ngIf="pageTitle === 'Dashboard'" (click)="navigateToHome()">Go to Home</button>
+    </div>
+  </nav>
+  

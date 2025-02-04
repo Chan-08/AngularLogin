@@ -1,0 +1,156 @@
+.login-container {
+    background: url('background.jpg') no-repeat center center/cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	color: #fff;
+}
+
+.container {
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px 3px rgba(255, 255, 255, 0.305);
+    overflow: hidden;
+}
+
+.signin, .signup {
+    width: 50%;
+    padding: 40px;
+    text-align: center;
+}
+
+.signin {
+    backdrop-filter: blur(2px);
+}
+
+.signup {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 255, 0.384);
+    color: #fff;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+p {
+    font-size: 18px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+
+.circle:hover {
+    background: yellow;
+}
+
+
+.circle {
+    width: 40px;
+    height: 40px;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    margin: 5px;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    background: rgba(92, 91, 91, 0.404);
+    border-radius: 5px;
+	color: #fff;
+}
+::placeholder {
+    color: #fff;
+}
+.forgot {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.button {
+    width: 80%;
+    padding: 5px;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.signin-button {
+    background: blue;
+    color: #fff;
+	border: 2px solid white;
+}
+
+.signin-button:hover {
+    background: transparent;
+	border: 2px solid white;
+
+}
+
+.signup-button {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.signup-button:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+
+@media (max-width: 980px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+        align-items: center;
+    }
+
+    .login-box {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .signin, .signup {
+        width: 100%;
+    }
+
+
+}

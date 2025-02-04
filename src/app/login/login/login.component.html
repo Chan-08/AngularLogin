@@ -1,8 +1,36 @@
-<div class="login-container">
-    <h2>Login</h2>
-    <input type="email" [(ngModel)]="email" placeholder="Email">
-    <input type="password" [(ngModel)]="password" placeholder="Password">
-    <button (click)="login()">Login</button>
-    <p *ngIf="errorMessage">{{ errorMessage }}</p>
-  </div>
+
   
+
+  
+<div class="login-container">
+  <div class="container">
+      <div class="login-box">
+          
+          <div class="signup">
+              <h2>Hi</h2>
+              <p>Create a new account and start your journey with us</p>
+              <button class="button signup-button">Sign Up</button>
+          </div>
+    
+          <div class="signin">
+              <h2>Sign in</h2>
+              <p>using</p>
+              <div class="social-icons">
+                  <div class="circle"><img src="https://img.icons8.com/ios-glyphs/30/google-logo--v1.png" alt="google-logo--v1"/></div>
+                  <div class="circle"><img src="https://img.icons8.com/ios-filled/30/facebook-new.png" alt="facebook-new"/></div>
+                  <div class="circle"><img src="https://img.icons8.com/ios-glyphs/30/twitterx--v2.png" alt="twitterx--v2"/></div>
+              </div>
+              
+              <p>or use your account</p>
+              <div>
+                <h2>Login</h2>
+                <input type="email" [(ngModel)]="email" placeholder="Email">
+                <input type="password" [(ngModel)]="password" placeholder="Password">
+                <button (click)="login()" class="button">Login</button>
+                <p *ngIf="errorMessage">{{ errorMessage }}</p>
+              </div>
+              
+          </div>
+      </div>
+    </div>
+</div>

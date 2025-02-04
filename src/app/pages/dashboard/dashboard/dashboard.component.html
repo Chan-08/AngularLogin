@@ -1,4 +1,22 @@
+<app-navbar></app-navbar>
 <div class="dashboard-container">
-  <h2>Dashboard</h2>
-  <button (click)="navigateToHome()">Go to Home</button>
+  <div class="dashboard">
+
+    <div class="detail">   
+      <h2>Welcome, {{ isDataLoaded ? userDetails.name : 'Loading...' }}</h2>
+    </div>
+  
+    <div class="detail">
+      <p><strong>Age:</strong> {{ isDataLoaded ? userDetails.age : 'Loading...' }}</p>
+    </div>
+  
+    <div class="detail">
+      <p><strong>Gender:</strong> {{ isDataLoaded ? userDetails.gender : 'Loading...' }}</p>
+    </div>
+  
+    <div class="detail">
+      <p><strong>Email:</strong> {{ isDataLoaded ? userDetails.email : 'Loading...' }}</p>
+    </div>
+
+  </div>
 </div>
