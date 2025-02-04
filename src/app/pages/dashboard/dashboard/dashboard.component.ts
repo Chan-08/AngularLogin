@@ -10,6 +10,6 @@ export class DashboardComponent {
   constructor(private router: Router) {}
 
   navigateToHome() {
-    this.router.navigate(['/home']);
+    this.router.navigate(['/pages/home']); // ✅ Navigate to Home
   }
 }

@@ -18,7 +18,7 @@ export class LoginComponent {
     this.http.get<any[]>('/assets/users.json').subscribe(users => {
       const user = users.find(u => u.email === this.email && u.password === this.password);
       if (user) {
-        this.router.navigate(['/dashboard']);
+        this.router.navigate(['/pages/dashboard']); // ✅ Navigate to pages/dashboard
       } else {
         this.errorMessage = 'Invalid email or password!';
       }
